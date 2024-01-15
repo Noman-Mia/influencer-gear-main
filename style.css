@@ -1,3 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* navbar */
 .navbar-title {
   color: #3a3a3a;
   font-family: Poppins;
@@ -7,8 +14,11 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: 2rem;
+
 }
 .navbar-description ul {
   display: flex;
@@ -24,8 +34,88 @@
   font-family: Poppins;
   font-size: 1rem;
   font-weight: 600;
-  margin-right: 2.2rem;
+  margin-right: 2.6rem;
 }
 .fa-magnifying-glass {
-  margin-right: 34px;
+  margin-right: 40px;
+}
+.fa-solid {
+  margin-left: 15px;
+}
+/* header-section */
+.header-section {
+  max-width: 1250px;
+  margin:0 auto;
+  padding:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:200px;
+  
+}
+.header-container {
+  width: 50%;
+}
+.header-title {
+color: #3A3A3A;
+font-size: 52px;
+font-weight: 700;
+}
+.header-description{
+color: #3A3A3A;
+font-size: 16px;
+font-weight: 600;
+}
+.btn{
+color: #FFF;
+margin-top: 10px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 700;
+background-color: rgb(227, 76, 106);
+padding: 10px 20px;
+border-radius: 10px;
+
+}
+.header-img {
+  width: 50%;
+  object-fit: cover;
+}
+.header-img img {
+  width: 70%;
+  position: relative;
+  z-index: 10;
+}
+.special-img{
+ position:absolute;
+ top:60px;
+ width: 40%;
+}
+.special-img .imge{
+  z-index: 0;
+}
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 576px) {
+  .navbar, .header-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .navbar-description ul {
+    flex-direction: column;
+  }
+  .fa-solid {
+    margin-right: 60px;
+    margin-top: 5px;
+  }
+  .special-img{
+    top: 640px;
+  }
 }
